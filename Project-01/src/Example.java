@@ -1,23 +1,31 @@
 public class Example {
     public static void main(String[] args) {
-        new PrintInt(10).printInt();
-        new PrintDouble(20.5).printDouble();
+        /*new PrintInt(10).printInt();
+        new PrintDouble(20.5).printDouble();*/
+
+        Print<Integer> p1 = new Print<>(34);
+        p1.printData();
+
+        Print<String> p2 =new Print<>("Hello");
+        p2.printData();
     }
 
 }
 
-class PrintInt {
-    private int x;
+class Print<T> {
+    private T x;
 
-    PrintInt(int x) {
+    Print(T x) {
         this.x = x;
     }
 
-    public void printInt() {
+    public void printData() {
         System.out.println(x);
     }
 
 }
+
+/*
 
 class PrintDouble {
     private double y;
@@ -31,3 +39,4 @@ class PrintDouble {
         System.out.println(y);
     }
 }
+*/
