@@ -9,8 +9,8 @@ public class Example {
         Print<String> p2 =new Print<>("Hello");
         p2.printData();
     }
-
 }
+
 
 class Print<T> {
     private T x;
@@ -22,7 +22,6 @@ class Print<T> {
     public void printData() {
         System.out.println(x);
     }
-
 }
 
 /*
