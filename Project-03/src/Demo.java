@@ -35,6 +35,12 @@ class Weather {
 
     double printData(DayType day) {
 
+        for (DayType d: DayType.values() //Values() ---> Array set
+             ) {
+            System.out.println(d.name());
+            System.out.println(d.code);
+        }
+
 
 
         switch (day) {
