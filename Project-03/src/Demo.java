@@ -1,15 +1,23 @@
 public class Demo {
     public static void main(String[] args) {
-       // double monday = new Weather().printData(DayType.MONDAY);
+        // double monday = new Weather().printData(DayType.MONDAY);
         DayType day = DayType.MONDAY;//Not Object But,have a Constructor
+        DayType day = new DayType();//Wrong (Not Create Object)
         double monday = new Weather().printData(day);
         System.out.println(monday);
+
     }
 }
 
 
 enum DayType {
-    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+
+    int code;
+
+    DayType(int code) {
+        this.code = code;
+    }
 }
 
 class Weather {
