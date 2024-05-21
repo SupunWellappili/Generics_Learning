@@ -1,6 +1,6 @@
 public class Demo {
     public static void main(String[] args) {
-        double monday = new Weather().printData("SUNDAY");
+        double monday = new Weather().printData(DayType.MONDAY);
         System.out.println(monday);
     }
 }
@@ -11,21 +11,21 @@ enum DayType {
 }
 
 class Weather {
-    double printData(String day) {
+    double printData(DayType day) {
         switch (day) {
-            case "MONDAY":
+            case MONDAY:
                 return 33.6;
-            case "TUESDAY":
+            case TUESDAY:
                 return 10.5;
-            case "WEDNESDAY":
+            case WEDNESDAY:
                 return 78.5;
-            case "THURSDAY":
+            case THURSDAY:
                 return 67.4;
-            case "FRIDAY":
+            case FRIDAY:
                 return 12.3;
-            case "SUNDAY":
+            case SUNDAY:
                 return 150.5;
-            case "SATURDAY":
+            case SATURDAY:
                 return 454.4;
             default:
                 return 0.0;
