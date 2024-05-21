@@ -1,6 +1,8 @@
 public class Demo {
     public static void main(String[] args) {
-        double monday = new Weather().printData(DayType.MONDAY);
+       // double monday = new Weather().printData(DayType.MONDAY);
+        DayType day = DayType.MONDAY;//Not Object But,have a Constructor
+        double monday = new Weather().printData(day);
         System.out.println(monday);
     }
 }
