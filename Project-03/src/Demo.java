@@ -5,6 +5,11 @@ public class Demo {
     }
 }
 
+
+enum DayType {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
 class Weather {
     double printData(String day) {
         switch (day) {
@@ -22,7 +27,8 @@ class Weather {
                 return 150.5;
             case "SATURDAY":
                 return 454.4;
-            default:return 0.0;
+            default:
+                return 0.0;
         }
     }
 }
