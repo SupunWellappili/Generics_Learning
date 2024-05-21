@@ -26,7 +26,14 @@ enum DayType {
 
 
 class Weather {
+
     double printData(DayType day) {
+        System.out.println("-----------");
+        System.out.println(day.name());
+        System.out.println(day.code);
+        System.out.println("-----------");
+
+
         switch (day) {
             case MONDAY:
                 return 33.6;
